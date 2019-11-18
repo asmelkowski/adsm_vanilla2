@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ADSM - Web Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="up_arrow">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M13,18H11V10L7.5,13.5L6.08,12.08L12,6.16L17.92,12.08L16.5,13.5L13,10V18M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z" />
+        </svg>
+    </div>
+    <section class="parallax">
+
+        <div id="welcome-text">
+            <div id="title">
+                <span class="abrv">ad</span>am
+                <br>
+                <span class="abrv">sm</span>elkowski
+            </div>
+            <p id="sub">Web developer</p>
+            <div class="down_arrow">
+                <svg viewBox="0 0 24 24">
+                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+                </svg>
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <div id="about-container">
+            <div id="about-me">
+                <h1>Hello there!</h1>
+                <p>
+                    My name is Adam. I'm a web developer and Python language enthusiast.
+                    Check out my latest projects!
+                </p>
+                <div class="down_arrow" id="projects_scroll">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+                    </svg>
+                </div>
+            </div>
+            <div id="skills">
+                <h1>My skills:</h1>
+                <ul>
+                    <li><strong>Languages:</strong></li>
+                    <ul>
+                        <li>Python (language of choice)</li>
+                        <li>JavaScript</li>
+                        <li>C++ (very minimal)</li>
+                        <li>Html (if You can call it a language &#128518)</li>
+                    </ul>
+                    <li><strong>Frameworks:</strong></li>
+                    <ul>
+                        <li>Python: Django, Flask</li>
+                        <li>JavaScript: Vue</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="imgs-container">
+            <div class="project-img" id="feeds">
+                <img src="imgs/feeds.png" alt="">
+                <div class="project-title">Test title</div>
+                <div class="project-actions">
+                    <a href="">
+                        <img src="icons/github-circle.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="icons/web.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="project-img">
+                <img src="imgs/polls.png" alt="">
+                <div class="project-title">Test title</div>
+                <div class="project-actions">
+                    <a href="">
+                        <img src="icons/github-circle.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="icons/web.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="project-img">
+                <img src="imgs/polls_api.png" alt="">
+                <div class="project-title">Test title</div>
+                <div class="project-actions">
+                    <a href="">
+                        <img src="icons/github-circle.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="icons/web.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="project-img">
+                <img src="imgs/weightlogger.png" alt="">
+                <div class="project-title">Test title</div>
+                <div class="project-actions">
+                    <a href="">
+                        <img src="icons/github-circle.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="icons/web.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
