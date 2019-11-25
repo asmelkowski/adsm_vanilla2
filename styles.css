@@ -92,10 +92,11 @@ section {
 }
 
 section#about {
-    min-height: 100vh;
+    height: 100vh;
 }
 
-#about-container {
+section#about #about-container {
+    height: 50%;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -104,7 +105,7 @@ section#about {
     line-height: 25px;
 }
 
-#about-container > div {
+section#about #about-container > div {
     width: 50%;
     min-width: 300px;
     flex: 1 0 50%;
@@ -113,38 +114,49 @@ section#about {
     text-align: center;
 }
 
-#about-container div h1 {
+section#about #about-container div h1 {
     margin-bottom: 30px;
 }
 
-#about-container div ul {
+section#about #about-container div ul {
     margin-bottom: 15px;
 }
 
 
-#about-container div ul li {
+section#about #about-container div ul li {
     margin-bottom: 5px;
 }
 
-#about-container #about-me {
+section#about #about-container #about-me {
     background-color: var(--primary-color);
 }
 
-#about-container #about-me #projects_scroll {
+section#about #about-container #about-me #projects_scroll {
     margin: 0 auto;
 }
 
-#about-container #skills {
+section#about #about-container #skills {
     background-color: var(--quinary-color);
 }
 
+section#about #python-parallax {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("imgs/python.jpg");
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 section#projects {
-    min-height: 50vh;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 0;
 }
 
 section#projects .imgs-container {
-    width: 100%;
-    height: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
