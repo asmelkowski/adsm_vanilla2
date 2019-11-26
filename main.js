@@ -14,18 +14,6 @@ var msnry = new Masonry( elem, {
   ifFitWidth: true,
 });
 
-projects_imgs.forEach(project => {
-    project.addEventListener('mouseover', function() {
-        this.querySelector('.project-title').style.display = 'flex';
-        this.querySelector('.project-actions').style.display = 'flex';
-    })
-});
-projects_imgs.forEach(project => {
-    project.addEventListener('mouseout', function() {
-        this.querySelector('.project-title').style.display = 'none';
-        this.querySelector('.project-actions').style.display = 'none';
-    })
-});
 
 down_arrow.addEventListener('click', function () {
     about.scrollIntoView();
@@ -37,12 +25,12 @@ up_arrow.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
 });
 
-
-
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 500) {
-        up_arrow.style.display = 'inline';
+        up_arrow.style.visibility = 'visible';
+        up_arrow.style.opacity = 1;
     } else {
-        up_arrow.style.display = 'none';
+        up_arrow.style.visibility = 'hidden';
+        up_arrow.style.opacity = 0;
     };
 }
